@@ -51,7 +51,7 @@ const Portfolio = () => {
       description: p4description,
       technologies: 'JavaScript | Webpack',
       link: 'https://dad-woodwork.000webhostapp.com/',
-      github: 'https://github.com/Meri-MG/To-Do-List',
+      github: 'https://github.com/DamianIanni/DAD',
     }
   ];
 
