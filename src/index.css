@@ -11,7 +11,7 @@
 }
 
 :root {
-  --color-bg: #1f1f38;
+  --color-bg: #2c2c6c;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
@@ -34,11 +34,16 @@ html {
 }
 
 body {
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(47,42,42,0.8435749299719888) 50%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(47,42,42,0.8435749299719888) 50%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(47,42,42,0.8435749299719888) 50%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
   font-family: 'Poppins', sans-serif;
-  background-color: var(--color-bg);
+  /* background-color: var(--color-bg); */
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
+  /* background-image: url(../src/assets/bg-texture.png); */
 }
 
 .container {

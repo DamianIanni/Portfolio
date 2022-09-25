@@ -1,80 +1,63 @@
 import React from 'react';
 import IMG1 from '../../assets/bookstore.png';
 import IMG2 from '../../assets/todo.png';
-import IMG3 from '../../assets/shelter.png';
 import IMG4 from '../../assets/fake.png';
-import IMG5 from '../../assets/news.png';
-import IMG6 from '../../assets/math.png';
+import DAD from '../../assets/DAD.png';
+import {LanguageContext} from '../../App'
+import { useContext } from 'react';
+import Languages from '../../langauges/Languages';
 
 import './portfolio.css';
 
 const Portfolio = () => {
+
+  const language = useContext(LanguageContext)
+  const p1description = language === "en" ? Languages.english.p1_description : Languages.spanish.p1_description
+  const p2description = language === "en" ? Languages.english.p2_description : Languages.spanish.p2_description
+  const p3description = language === "en" ? Languages.english.p3_description : Languages.spanish.p3_description
+  const p4description = language === "en" ? Languages.english.p4_description : Languages.spanish.p4_description
   const soloProjects = [
     {
       id: 1,
-      title: 'Bookstore',
+      title: 'Garnet Admin',
       img: IMG1,
-      description:
-        'BookStore app that allows users to store books and update progress',
-      technologies: 'React | Redux | Ruby on Rails',
+      description: p1description,
+      technologies: 'React | React-Bootstrap | JavaScript',
       link: 'https://melodic-boba-111583.netlify.app/',
       github: 'https://github.com/Meri-MG/bookstore---react',
     },
     {
       id: 2,
-      title: 'FakeStore',
+      title: 'Garnet Control Plus',
       img: IMG4,
-      description:
-        'FakeStore app that provides information about available products and their details',
-      technologies: 'React | Redux',
+      description: p2description,
+      technologies: 'React | React-Bootstrap',
       link: 'https://fakestore-metrics.netlify.app/',
       github: 'https://github.com/Meri-MG/Fakestore---react',
     },
     {
       id: 3,
-      title: 'To-Do-App',
+      title: 'Meeting App',
       img: IMG2,
-      description: 'User friendly app to plan your day and manage tasks',
+      description: p3description,
       technologies: 'JavaScript | Webpack',
       link: 'https://meri-mg.github.io/To-Do-List/dist/',
       github: 'https://github.com/Meri-MG/To-Do-List',
     },
     {
       id: 4,
-      title: 'Shelter',
-      img: IMG3,
-      description:
-        'Fully responsive interactive website built based on Figma design',
-      technologies: 'JavaScript | CSS',
-      link: 'https://meri-mg.github.io/shelter/pages/main/index.html',
-      github: 'https://github.com/Meri-MG/shelter',
-    },
-    {
-      id: 5,
-      title: 'World News',
-      img: IMG5,
-      description:
-        'Fully responsive interactive website built based on Adobe XD design',
-      technologies: 'JavaScript | CSS',
-      link: 'https://meri-mg.github.io/Unilab-world-news/',
-      github: 'https://github.com/Meri-MG/Unilab-world-news',
-    },
-    {
-      id: 6,
-      title: 'Math Resource',
-      img: IMG6,
-      description:
-        'Real-world group project which is still in progress and will provide educational platform for future young developers',
-      technologies: 'JavaScript | Scss | Python',
-      link: 'https://lukinoo.github.io/math-resource/',
-      github: 'https://github.com/lukinoo/math-resource',
-    },
+      title: 'DAD WoodWork',
+      img: DAD,
+      description: p4description,
+      technologies: 'JavaScript | Webpack',
+      link: 'https://dad-woodwork.000webhostapp.com/',
+      github: 'https://github.com/Meri-MG/To-Do-List',
+    }
   ];
 
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h2>{language === "en" ? Languages.english.portfolio : Languages.spanish.portfolio}</h2>
 
       <div className="container portfolio__container">
         {soloProjects.map((pro) => (
