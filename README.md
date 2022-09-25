@@ -1,7 +1,5 @@
 # Personal-Portfolio
-> This is personal portfolio website.
-
-![Portfolio](https://raw.github.com/Meri-MG/portfolio---react/master/src/assets/port.png)
+> This is a templete personal portfolio website that i take and customize based on my needs.
 
 ## Built With
 
