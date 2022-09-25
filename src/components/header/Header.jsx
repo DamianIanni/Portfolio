@@ -24,7 +24,7 @@ const Header = () => {
         <h5>{language === "en" ? Languages.english.text_hello : Languages.spanish.text_hello }</h5>
         <h1>Damian Ianni</h1>
         <h5 className="text-light">{language === "en" ? Languages.english.dev : Languages.spanish.dev }</h5>
-        {/* <CTA /> */}
+        <CTA />
       </div>
     </header>
   );

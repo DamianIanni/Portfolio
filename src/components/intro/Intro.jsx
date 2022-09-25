@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaAward } from 'react-icons/fa';
 import { VscFolderLibrary } from 'react-icons/vsc';
-import ME from '../../assets/ME.jpeg';
+// import ME from '../../assets/ME.jpeg';
+import ME from '../../assets/yoyo.png'
 import './intro.css';
 import {LanguageContext} from '../../App'
 import { useContext } from 'react';
@@ -15,7 +16,7 @@ const Intro = () => {
       <h2>{language === "en" ? Languages.english.about_me : Languages.spanish.about_me}</h2>
       <div className="container about__container">
         <div className="about__me">
-          <div style={{height: 500}} className="about__me-image">
+          <div style={{height: 300}} className="about__me-image">
             <img src={ME} alt="me"  />
           </div>
         </div>
